@@ -1,0 +1,98 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Quantico', sans-serif;
+    background-position: center;
+    background-color: #C2CAD0;
+}
+
+#buttons{
+    margin-top: 25px;
+}
+button{
+    border: none;
+    background-color: transparent;
+    border-radius: 4px;
+    outline: none;
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Quantico', sans-serif;
+    background-color: #17252A;
+    font-size: 20px;
+}
+button:hover{
+    color: #3AAFA9;
+}
+
+.container {
+    width: auto;
+    margin: 20px 0px 50px 0px;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.btn {
+    position: relative;
+    letter-spacing: 0.25em;
+    margin: 0 auto;
+    padding: 20px 20px;
+    background: transparent;
+    outline: none;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+}
+
+.btn::after, .btn::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    transform: skewX(30deg);
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: -2;
+}
+
+.btn::before {
+    background-color: #3AAFA9;
+    top: -0.5rem;
+    left: 0rem;
+}
+
+.btn::after {
+    background-color: #17252A;
+    top: 0.5;
+    left: 9rem;
+}
+
+.btn:hover::before, .btn:hover::after {
+    top: 0;
+    transform: skewx(0deg);
+}
+
+.btn:hover::after {
+    left: 0rem;
+}
+
+.btn:hover::before {
+    left: 8.75rem;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#timer{
+    color: #3AAFA9;
+    font-size: 80px;
+    margin: 30px 0px 10px 0px;
+}
